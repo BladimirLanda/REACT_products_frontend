@@ -41,13 +41,13 @@ function Products() {
                     Productos
                 </h2>
 
-                <Link to="productos/nuevo" className="p-3 text-sm font-bold text-white shadow-sm rounded-md 
-                bg-indigo-600 hover:bg-indigo-500">
+                <Link to="productos/nuevo" className="p-3 h-10 md:h-auto text-sm font-bold flex items-center justify-center
+                text-white shadow-sm rounded-md bg-indigo-600 hover:bg-indigo-500">
                     Agregar Producto
                 </Link>
             </div>
 
-            <div className="p-2">
+            <div className="p-2 overflow-x-auto">
                 <table className="w-full mt-5 table-auto"> {/*table-auto: Calculo ancho de columnas*/}
                     <thead className="bg-slate-800 text-white">
                         <tr>
@@ -57,6 +57,7 @@ function Products() {
                             <th className="p-2">Acciones</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         {productsData.map(product => (
                             <ProductDetails key={product.id} product={product} />

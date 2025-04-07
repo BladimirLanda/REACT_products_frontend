@@ -100,8 +100,8 @@ function NewProduct() {
                     Registrar Producto
                 </h2>
 
-                <Link to="/" className="p-3 text-sm font-bold text-white shadow-sm rounded-md 
-                bg-indigo-600 hover:bg-indigo-500">
+                <Link to="/" className="p-3 h-10 md:h-auto whitespace-nowrap flex items-center justify-center 
+                text-sm text-center font-bold text-white shadow-sm rounded-md bg-indigo-600 hover:bg-indigo-500">
                     Volver a Productos
                 </Link>
             </div>
